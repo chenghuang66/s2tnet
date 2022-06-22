@@ -1,0 +1,34 @@
+num_epoch: 400
+print_log: true
+batch_size: 64
+val_batch_size: 64
+test_batch_size: 1
+log_interval: 50
+eval_interval: 1
+phase: 'train' # train or test
+test_model: 351 # load best pt to test
+ade: 8387
+# continue train from where to start
+load_checkpt: false
+val_test: false
+
+# Adam or NoamOpt
+optimizer: 'NoamOpt'
+weight_decay: 0.0001
+base_lr: 0.05
+step: []
+d_model: 32
+warmup: 5000
+factor: 1
+
+# feeder
+feeder: feeder.Feeder
+train_data_cache: ./data/ApolloScape/train_data.pkl
+test_data_cache: ./data/ApolloScape/test_data.pkl
+train_data_path: ./data/ApolloScape
+test_data_path: ./data/ApolloScape
+train_percent: 0.8
+
+
+
+
