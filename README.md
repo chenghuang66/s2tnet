@@ -33,7 +33,6 @@ Results on Apollo Scape:
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0pky"></th>
     <th class="tg-c3ow">WSADE</th>
     <th class="tg-c3ow">ADEv</th>
     <th class="tg-c3ow">ADEp</th>
